@@ -10,7 +10,7 @@ The movement is projected on the assumption that the "Ball" objects are moving i
 
 ## Build
 
-Each commit on master initiates a build/test/deploy cycle through Azure DevOps pipeline associated with this repo.
+Each commit on master initiates a CI/CD cycle through Azure DevOps pipeline associated with this repo.
 
 ## Deployment
 
