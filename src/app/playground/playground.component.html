@@ -1,0 +1,2 @@
+<app-playground-settings [rules]="physicsEngine.physicsRules" [ballDisplaySettings]="ballDisplaySettings" (clearEvent)="clearField()"></app-playground-settings>
+<canvas #surface (click)="fireProjectile($event)"></canvas>

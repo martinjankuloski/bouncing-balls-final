@@ -1,0 +1,38 @@
+<mat-card id="playgroundSettings">
+  <mat-card-title>
+    Settings
+  </mat-card-title>
+  <mat-card-subtitle>
+    Physics engine
+  </mat-card-subtitle>
+  <mat-form-field class="settingsInput">
+    <mat-label>Max firing velocity</mat-label>
+    <input matNativeControl type="number" min="0" [(ngModel)]="rules.maxVelocity" />
+  </mat-form-field>
+  <mat-form-field class="settingsInput">
+    <mat-label>Stopping velocity</mat-label>
+    <input matNativeControl type="number" min="1" [(ngModel)]="rules.stoppingVelocity" />
+  </mat-form-field>
+  <mat-form-field class="settingsInput">
+    <mat-label>Gravity</mat-label>
+    <input matNativeControl type="number" min="1" [(ngModel)]="rules.g" />
+  </mat-form-field>
+  <mat-form-field class="settingsInput">
+    <mat-label>Coefficient of restitution</mat-label>
+    <input matNativeControl input type="number" min="0" max="1" [(ngModel)]="rules.cRestitution" />
+  </mat-form-field>
+  <mat-card-subtitle>
+    Ball display
+  </mat-card-subtitle>
+  <mat-form-field class="settingsInput">
+    <mat-label>Radius</mat-label>
+    <input matNativeControl type="number" min="1" max="30" [(ngModel)]="ballDisplaySettings.radius" />
+  </mat-form-field>
+  <mat-form-field class="settingsInput">
+    <mat-label>Color</mat-label>
+    <input matNativeControl type="text" [(ngModel)]="ballDisplaySettings.color" />
+  </mat-form-field>
+  <mat-card-actions>
+    <button mat-stroked-button color="warn" (click)="clearFields()" >Clear Field</button>
+  </mat-card-actions>
+</mat-card>
